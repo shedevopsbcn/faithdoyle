@@ -8,21 +8,65 @@
   <!-- Google Fonts: Keeping Raleway -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="website.css">
+  <!-- GLOBAL STYLES -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      color: black;
+      background-color: white;
+    }
 
-  <!-- Navigation Bar -->
-  <section class="hero-section">
-    
+    h1, h2, h3 {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p, div, span {
+      font-weight: 300;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV BAR (aligned right, pushed left slightly) -->
+  <section class="hero-section" style="
+    width: 100%;
+    background-color: white; 
+    padding: 20px 0; 
+    display: flex; 
+    justify-content: left;
+    transform: translateX(65%);
+    padding-right: 80px; /* increased from 40px */
+  ">
+
     <nav>
-      <div class="nav-links">
-      <a href="index.html#about">HOME</a>
-      <a href="Boda.html">PROYECTOS</a>
-      <a href="Contacto.html">CONTACTO</a>
+      <div class="nav-links" style="
+        display: flex; 
+        gap: 40px; 
+        font-size: 18px; 
+        font-weight: 500;
+      ">
+        <a href="index.html#about">HOME</a>
+        <a href="Boda.html">PROYECTOS</a>
+        <a href="Contacto.html">CONTACTO</a>
       </div>
     </nav>
-  </section>
 
+  </section>
 
   
 <!-- About Rinah Section -->
