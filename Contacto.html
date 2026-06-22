@@ -8,74 +8,35 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="website.css">
-
+  <!-- GLOBAL STYLES -->
   <style>
-
-    /* Main container for the form */
-    .contact-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      color: black;
+      background-color: white;
     }
 
-    /* FORM BOX — REDUCED TO 15% */
-    .contact-left {
-      width: 100%;
-      max-width: 900px;
-
-      /* ↓↓↓ YOU CAN ADJUST THESE ↓↓↓ */
-      transform: scale(0.85); /* 15% smaller */
-      transform-origin: top center;
-
-      /* FORM BOX SIZE CONTROLS */
-      width: 100%;   /* You can change to 700px, 600px, etc. */
-      height: auto;  /* You can change to 400px, 500px, etc. */
+    h1, h2, h3 {
+      font-weight: 700;
+      margin: 0;
     }
 
-    /* Form grid layout */
-    #contact-form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      width: 100%;
+    p, div, span {
+      font-weight: 300;
     }
 
-    /* Form fields */
-    #contact-form input,
-    #contact-form textarea,
-    #contact-form button {
-      padding: 18px;
-      border: 1px solid #000;
-      background: white;
-      width: 100%;
-      box-sizing: border-box;
-      font-size: 18px;
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    /* Message box */
-    #contact-form textarea {
-      grid-column: 1 / span 2;
-      min-height: 180px;
+    nav a:hover {
+      opacity: 0.7;
     }
-
-    /* Submit button */
-    #contact-form button {
-      grid-column: 1 / span 2;
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    /* Mobile fix */
-    @media (max-width: 900px) {
-      .contact-left {
-        transform: scale(1);
-      }
-    }
-
   </style>
 </head>
 
