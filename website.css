@@ -1,0 +1,866 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+body {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  background: rgb(251, 250, 250);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+  overflow-x: hidden !important;
+}
+
+/* Navigation bar */
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.hero-section, .hero-banner {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.title-container {
+  text-align: left;
+}
+
+.title-container h1 {
+  font-size: 36px;
+  margin: 0;
+  position: relative;
+}
+
+.title-container h2 {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b0c4de;
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.logo-container img {
+  width: 150px; /* Adjust size as needed */
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+/* Profile Picture */
+.hero-banner {
+  position: relative;
+  height: 70vh;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 0 50px;
+}
+
+.hero-text {
+  z-index: 2;
+  max-width: 600px;
+  padding-left: 80px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 5s ease;
+}
+
+.hero-btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.hero-scroll-images {
+  display: flex;
+  width: max-content;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  animation: scroll-hero-images 40s linear infinite; /* Adjust speed as needed */
+  z-index: 1;
+}
+
+.hero-scroll-images img {
+  height: 70vh;
+  height: 90vh;
+  width: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 7;
+  transition: opacity 0.3s;
+}
+
+.hero-scroll-images img:hover {
+  opacity: 0.65;
+}
+
+@keyframes scroll-hero-images {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.photo-container img {
+  width: 100%; /* Make it take up the full width */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Image carousel */
+.image-carousel-container {
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.image-carousel-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+.image-carousel {
+  display: flex;
+  white-space: nowrap;
+  gap: 20px;
+  position: relative;
+  animation: slideAnimation 20s linear infinite; /* Unified animation */
+}
+
+.image-carousel img {
+  height: 80px;
+  flex-shrink: 0;
+  background-color: white;       /* White background inside box */
+  padding: 10px;                  /* Adds spacing inside the box */
+}
+
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* About the CEO Section */
+.about-ceo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 30px;
+  padding: 100px 40px;
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.about-ceo a {
+  color: white;
+}
+
+.ceo-photo img {
+  height: 550px;
+  border-radius: 0%;
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ceo-text {
+  max-width: 600px;
+}
+
+.ceo-title a {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.ceo-title a:hover {
+  color: #b0c4de;
+}
+
+/* Services Section */
+.services-section {
+  padding: 40px;
+  background-color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 80px;
+  justify-content: center;
+}
+
+.services-tile {
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.services-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px white;
+  background-color: black;
+}
+
+.services-section h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color:rgb(0, 0, 0);
+}
+
+.service-icon {
+  filter: grayscale(100%);
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 100px;
+}
+
+.service-box p, 
+.service-box h3 {
+  text-align: center;
+}
+/* Blog Section */
+#blog {
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Blog Heading */
+#blog h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Blog Description */
+#blog p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+/* Blog Container */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three columns */
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr; /* Stack in one column */
+  }
+}
+
+/* Blog Post Styling */
+.blog-post {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition:
+  transform 0.3s ease-in-out,
+  box-shadow 0.3s ease-in-out;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover Effect */
+.blog-post:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post:hover img {
+  opacity: 0.8;
+}
+
+/* Blog Text Overlay */
+.blog-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.blog-post:hover .blog-text {
+  opacity: 1;
+}
+
+/* Added to style the whole page */
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Raleway", sans-serif;
+}
+
+/* Make all headers white across the site */
+h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+}
+/* Show Section Styling */
+#show {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.show-image-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.show-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* YouTube Video Styling */
+.show-video-container {
+  margin-top: 30px;
+}
+
+.show-video-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*new css 20-6-25*/
+.fullwidth-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0a0a0a;
+  color: rgb(0, 0, 0);
+  padding: 80px 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.about-right p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.about-links {
+  margin-top: 25px;
+}
+
+.about-links a {
+  display: inline-block;
+  margin-right: 25px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.about-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.about-links a:hover {
+  color: #000000;
+}
+
+.about-links a:hover::after {
+  width: 100%;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.services-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 Force 3 columns */
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.service-box {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(53, 52, 52, 0.4);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.service-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-section {
+  padding: 80px 40px;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.skill-box {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-percent {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f94d00;
+}
+
+.skill-label {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000; /* Dark background */
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.sticky-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.sticky-footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin-top: 5px;
+}
+
+body {
+  padding-bottom: 60px; /* space so footer doesn't cover content */
+}
+
+.left-image-right-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-column img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+}
+
+.right-column {
+  flex: 1;
+  font-family: "Raleway", sans-serif;
+}
+
+.right-column h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.join-button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 20px;
+  font-size: 0.4rem;
+  line-height: 1.6;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;   /* 🔥 top-align text */
+  justify-content: center;   /* 🔥 center horizontally */
+}
+
+.signin-section h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.about-left {
+  line-height: 1.8; /* More breathing room */
+  font-size: 1.1rem; /* Slightly larger */
+  max-width: 700px;
+}
+
+.about-section {
+  background: linear-gradient(to right, #111 100%, rgba(0, 0, 0, 0.85)),
+  url('your-bg-image.jpg') center/cover no-repeat;
+}
+
+.background-section {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 60px 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 14px; /* Adjust the size as needed */
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds contrast */
+  z-index: 0;
+}
+
+.background-section * {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  color: white;
+  padding: 20px;
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+.card:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
+.form-box input {
+  width: 100%;
+  max-width: 350px; /* or 300px for tighter */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section, .projects-section, .about-ceo, .contact-me {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+img, .ceo-photo img {
+  vertical-align: top;
+}
+
+.background-section {
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.background-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-group {
+  margin-top: 200px;
+}
+.contact-group a {
+  color: white;
+  margin-bottom: 50px;
+}

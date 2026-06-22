@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Rinah Colomer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="website.css">
+
+  <style>
+
+    /* Main container for the form */
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* FORM BOX — REDUCED TO 15% */
+    .contact-left {
+      width: 100%;
+      max-width: 900px;
+
+      /* ↓↓↓ YOU CAN ADJUST THESE ↓↓↓ */
+      transform: scale(0.85); /* 15% smaller */
+      transform-origin: top center;
+
+      /* FORM BOX SIZE CONTROLS */
+      width: 100%;   /* You can change to 700px, 600px, etc. */
+      height: auto;  /* You can change to 400px, 500px, etc. */
+    }
+
+    /* Form grid layout */
+    #contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+
+    /* Form fields */
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+      padding: 18px;
+      border: 1px solid #000;
+      background: white;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+
+    /* Message box */
+    #contact-form textarea {
+      grid-column: 1 / span 2;
+      min-height: 180px;
+    }
+
+    /* Submit button */
+    #contact-form button {
+      grid-column: 1 / span 2;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    /* Mobile fix */
+    @media (max-width: 900px) {
+      .contact-left {
+        transform: scale(1);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAV BAR (aligned right, pushed left slightly) -->
+<section class="hero-section" style="
+  width: 100%;
+  background-color: white; 
+  padding: 20px 0; 
+  display: flex; 
+  justify-content: left;
+  transform: translateX(65%);
+  padding-right: 80px; /* increased from 40px */
+">
+
+  <nav>
+    <div class="nav-links" style="
+      display: flex; 
+      gap: 40px; 
+      font-size: 18px; 
+      font-weight: 500;
+    ">
+      <a href="index.html#about">HOME</a>
+      <a href="Boda.html">PROYECTOS</a>
+      <a href="Contacto.html">CONTACTO</a>
+    </div>
+  </nav>
+
+</section>
+
+<!-- SMALL WHITE SPACE BEFORE IMAGE -->
+<div style="height: 20px; background-color: white;"></div>
+
+<!-- VIDEO SECTION -->
+<section id="video" style="padding: 0;">
+
+  <div style="position: relative; width: 100%;">
+
+    <img 
+      src="assets/Casament1.jpg" 
+      alt="Casament" 
+      style="width: 100%; height: 650px; display: block; object-fit: cover;"> <!-- reduced height -->
+
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    ">
+      Contacto
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT TITLE (BLACK, CENTERED, BELOW IMAGE, BEFORE FORM) -->
+<h4 style="
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black !important; /* IMPORTANT: overrides website.css */
+  margin-top: 100px;
+">
+  Contacto
+</h4>
+
+<!-- CONTACT FORM SECTION -->
+<section class="contact-wrapper">
+  <div class="contact-left" style="transform: scale(1.00); transform-origin: top center;">
+
+    <!-- Contact form -->
+    <form id="contact-form"
+      action="https://formspree.io/f/xvzlvljw"
+      method="POST">
+
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <textarea name="message" placeholder="Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- Success message -->
+    <p id="success-message" style="display:none; margin-top: 15px;">
+      Thank you! Your message has been sent successfully.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- FORM SCRIPT -->
+<script>
+  const form = document.getElementById("contact-form");
+  const success = document.getElementById("success-message");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      success.style.display = "block";
+    }
+  });
+</script>
+
+<!-- FOOTER -->
+<footer style="color: black; background-color: white; padding: 40px 20px;">
+
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; flex-wrap: wrap;">
+    <div style="font-size: 36px; font-weight: bold; text-transform: uppercase;"></div>
+    <div style="font-size: 14px;"></div>
+  </div>
+
+  <hr style="border: 0.5px solid black; margin-bottom: 20px;">
+
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+    <div style="font-size: 16px; white-space: nowrap;">
+      Tel: +34 609 059 802
+    </div>
+
+    <div style="font-size: 16px; white-space: nowrap;">
+      <a href="https://www.linkedin.com/in/rinah-colomer-ayllón/" target="_blank" style="color: black; text-decoration: underline;">LinkedIn</a>
+      &nbsp;|&nbsp;
+      <a href="https://www.instagram.com/rini_colomer/" target="_blank" style="color: black; text-decoration: underline;">Instagram</a>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
