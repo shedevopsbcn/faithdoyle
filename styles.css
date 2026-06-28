@@ -1,0 +1,654 @@
+/* ============================================
+   RINAH COLOMER — GLOBAL STYLESHEET
+   ============================================ */
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ============================================
+   NAV
+   ============================================ */
+.nav-bar {
+  width: 100%;
+  background-color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* ============================================
+   HERO BANNER (full-width image with title)
+   ============================================ */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+/* ============================================
+   IMAGE GRID
+   ============================================ */
+.grid-section {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.grid-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.grid-item {
+  flex: 1 1 33.333%;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================
+   PROJECTS LIST SECTION
+   ============================================ */
+.projects-section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.projects-heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.2px solid #302f2f;
+  padding: 20px 0;
+  width: calc(100% - 40px);
+  margin: 0 20px;
+}
+
+.projects-heading span {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.project-row {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 0.2px solid #302f2f;
+  margin: 0 20px;
+  min-height: 200px;
+  align-items: center;
+}
+
+.project-row:first-of-type {
+  border-top: 0.2px solid black;
+}
+
+.project-info {
+  width: 33%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.project-info .project-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.project-thumb {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-thumb img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-desc {
+  width: 33%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  color: black;
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-tagline {
+  font-size: 14px;
+}
+
+.footer-divider {
+  border: 0.5px solid black;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-contact {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.footer-contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-social {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.footer-social a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ============================================
+   INDEX PAGE — ABOUT SECTION
+   ============================================ */
+.about-section {
+  width: 100%;
+  background-color: white;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2.name {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.about-text h2.location {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  max-width: 700px;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ============================================
+   INDEX PAGE — PORTFOLIO GRID
+   ============================================ */
+.portfolio-section {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.portfolio-section h3 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.portfolio-section .subtitle {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.portfolio-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 25px;
+}
+
+.portfolio-item {
+  flex: 1;
+  text-align: left;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.portfolio-item p {
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* ============================================
+   INDEX PAGE — SERVICES SECTION
+   ============================================ */
+.services-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.services-section h2 {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 28px;
+}
+
+.services-divider {
+  border: 0.5px solid rgb(132, 131, 131);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.service-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* ============================================
+   INDEX PAGE — PHOTO STRIP
+   ============================================ */
+.photo-strip {
+  height: 550px;
+  overflow: hidden;
+}
+
+.photo-strip-inner {
+  height: 100%;
+  display: flex;
+}
+
+.photo-strip-inner img {
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 18px;
+  border: 1px solid #000;
+  background: white;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-form textarea {
+  grid-column: 1 / span 2;
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form button {
+  grid-column: 1 / span 2;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+/* ============================================
+   SPACER
+   ============================================ */
+.spacer {
+  height: 20px;
+  background-color: white;
+}
+
+/* ============================================
+   MOBILE — TABLET (max 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* Nav */
+  .nav-bar {
+    justify-content: center;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    gap: 24px;
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero-banner {
+    height: 350px;
+  }
+
+  .hero-banner-title {
+    font-size: 32px;
+  }
+
+  /* Grid */
+  .grid-item {
+    flex: 1 1 50%;
+  }
+
+  /* Projects list */
+  .project-row {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 12px;
+  }
+
+  .project-info,
+  .project-thumb,
+  .project-desc {
+    width: 100%;
+  }
+
+  .project-thumb img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .projects-heading span {
+    font-size: 32px;
+  }
+
+  /* About section */
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Portfolio grid */
+  .portfolio-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .portfolio-item img {
+    height: 300px;
+  }
+
+  /* Services */
+  .services-grid {
+    flex-direction: column;
+  }
+
+  /* Photo strip */
+  .photo-strip {
+    height: 300px;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-title {
+    font-size: 28px;
+  }
+
+  /* Contact form */
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form textarea,
+  .contact-form button {
+    grid-column: 1;
+  }
+}
+
+/* ============================================
+   MOBILE — PHONE (max 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+  /* Nav */
+  .nav-links {
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero-banner {
+    height: 260px;
+  }
+
+  .hero-banner-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  /* Grid — single column on phone */
+  .grid-item {
+    flex: 1 1 100%;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Portfolio grid */
+  .portfolio-item img {
+    height: 220px;
+  }
+
+  /* About */
+  .about-text h2.name {
+    font-size: 24px;
+  }
+
+  .about-text h2.location {
+    font-size: 18px;
+  }
+
+  /* Photo strip — show only 2 on phone */
+  .photo-strip-inner img:nth-child(n+3) {
+    display: none;
+  }
+
+  /* Footer */
+  .footer-title {
+    font-size: 22px;
+  }
+}

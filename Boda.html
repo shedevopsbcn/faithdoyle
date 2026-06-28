@@ -3,299 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Catalunya</title>
-
-  <!-- Google Font -->
+  <title>Bodas — Rinah Colomer</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- GLOBAL STYLES -->
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Raleway', sans-serif;
-      font-size: 16px;
-      color: black;
-      background-color: white;
-    }
-
-    h1, h2, h3 {
-      font-weight: 700;
-      margin: 0;
-    }
-
-    p, div, span {
-      font-weight: 300;
-    }
-
-    nav a {
-      color: black;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- NAV BAR (aligned right, pushed left slightly) -->
-<section class="hero-section" style="
-  width: 100%;
-  background-color: white; 
-  padding: 20px 0; 
-  display: flex; 
-  justify-content: left;
-  transform: translateX(65%);
-  padding-right: 80px; /* increased from 40px */
-">
-
-  <nav>
-    <div class="nav-links" style="
-      display: flex; 
-      gap: 40px; 
-      font-size: 18px; 
-      font-weight: 500;
-    ">
-      <a href="index.html#about">HOME</a>
+  <!-- NAV -->
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
       <a href="Boda.html">PROYECTOS</a>
       <a href="Contacto.html">CONTACTO</a>
     </div>
   </nav>
 
-</section>
+  <div class="spacer"></div>
 
-<!-- SMALL WHITE SPACE BEFORE IMAGE -->
-<div style="height: 20px; background-color: white;"></div>
-
-<!-- VIDEO SECTION -->
-<section id="video" style="padding: 0;">
-
-  <div style="position: relative; width: 100%;">
-
-    <img 
-      src="assets/Ca0.webp" 
-      alt="Casament" 
-      style="width: 100%; height: 650px; display: block; object-fit: cover;"> <!-- reduced height -->
-
-    <div style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 48px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(0,0,0,0.7);
-    ">
-      Bodas
-    </div>
-
+  <!-- HERO -->
+  <div class="hero-banner">
+    <img src="assets/Ca0.webp" alt="Bodas">
+    <div class="hero-banner-title">Bodas</div>
   </div>
 
-</section>
+  <!-- IMAGE GRID -->
+  <section class="grid-section">
+    <h2>FOTOS</h2>
+    <div class="grid">
+      <div class="grid-item"><img src="assets/Ca1.webp" alt="Boda 1"></div>
+      <div class="grid-item"><img src="assets/ca2.webp" alt="Boda 2"></div>
+      <div class="grid-item"><img src="assets/ca3.webp" alt="Boda 3"></div>
+      <div class="grid-item"><img src="assets/ca5.webp" alt="Boda 4"></div>
+      <div class="grid-item"><img src="assets/ca6.webp" alt="Boda 5"></div>
+      <div class="grid-item"><img src="assets/ca7.webp" alt="Boda 6"></div>
+      <div class="grid-item"><img src="assets/b7.webp" alt="Boda 7"></div>
+      <div class="grid-item"><img src="assets/b8.webp" alt="Boda 8"></div>
+      <div class="grid-item"><img src="assets/b9.webp" alt="Boda 9"></div>
+    </div>
+  </section>
 
-<!-- IMAGE GRID SECTION -->
-<section style="width: 100%; padding: 50px 20px;">
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <div class="projects-heading"><span>PROYECTOS</span></div>
 
-  <h2 style="font-size: 36px; margin-bottom: 20px; padding-left: 20px;">FOTOS</h2>
-
-  <div style="display: flex; flex-wrap: wrap; width: 100%;">
-
-    <div style="flex: 1 1 33.333%;"><img src="assets/Ca1.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/ca2.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/ca3.webp" style="width: 98%; height: 98%;"></div>
-
-    <div style="flex: 1 1 33.333%;"><img src="assets/ca5.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/ca6.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/ca7.webp" style="width: 98%; height: 98%;"></div>
-
-    <div style="flex: 1 1 33.333%;"><img src="assets/b7.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/b8.webp" style="width: 98%; height: 98%;"></div>
-    <div style="flex: 1 1 33.333%;"><img src="assets/b9.webp" style="width: 98%; height: 98%;"></div>
-
-
-  </div>
-
-</section>
-
-<!-- PROJECTS SECTION --> 
-<section style="width: 100%; padding: 50px 0;">
-
-  <div style="display: flex; align-items: center; border-bottom: 0.2px solid #302f2f; padding: 20px 0; width: calc(100% - 40px); margin: 0 20px;">
-    <span style="font-size: 48px; font-weight: bold; text-transform: uppercase;">PROYECTOS</span>
-  </div>
-
-  <!-- Retrato -->
-  <div style="display: flex; border-top: 0.2px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Retratos</div>
-      <div>Foto de perfil, Para revista, LinkedIn</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Retratos</div><div>Foto de perfil, Para revista, LinkedIn</div></div>
+      <a href="Retrato.html" class="project-thumb"><img src="assets/Moda4.webp" alt="Retratos"></a>
+      <div class="project-desc">Captura la esencia única de cada persona retratada<br>Imágenes naturales que transmiten emoción y autenticidad</div>
     </div>
 
-    <a href="Retrato.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/Moda4.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Captura la esencia única de cada persona retratada <br>
-      Imágenes naturales que transmiten emoción y autenticidad
-    </div>
-  </div>
-
-  <!-- Producto -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Productos</div>
-      <div>Foto de producto, Catálogo, Publicidad</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Productos</div><div>Foto de producto, Catálogo, Publicidad</div></div>
+      <a href="Producto.html" class="project-thumb"><img src="assets/Producto2.webp" alt="Productos"></a>
+      <div class="project-desc">Destaca tus productos con imágenes claras y profesionales<br>Fotografía diseñada para generar impacto y transmitir calidad</div>
     </div>
 
-    <a href="Producto.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/Producto2.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Destaca tus productos con imágenes claras y profesionales <br>
-      Fotografía diseñada para generar impacto y transmitir calidad
-    </div>
-  </div>
-
-  <!-- Moda -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Moda</div>
-      <div>Editorial, Lookbook, Redes sociales</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Moda</div><div>Editorial, Lookbook, Redes sociales</div></div>
+      <a href="Moda.html" class="project-thumb"><img src="assets/producto6.webp" alt="Moda"></a>
+      <div class="project-desc">Resalta estilo único y creatividad de cada colección<br>Fotografía profesional que transmite elegancia completa</div>
     </div>
 
-    <a href="Moda.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/producto6.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Resalta estilo único y creatividad de cada colección <br>
-      Fotografía profesional que transmite elegancia completa
-    </div>
-  </div>
-
-  <!-- Evento -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Evento</div>
-      <div>Concierto, Conferencia, Fiesta privada</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Evento</div><div>Concierto, Conferencia, Fiesta privada</div></div>
+      <a href="Evento.html" class="project-thumb"><img src="assets/Estudi3.webp" alt="Evento"></a>
+      <div class="project-desc">Captura cada momento único con precisión y mucho cuidado<br>Fotografía profesional que refleja emoción y energía genuina</div>
     </div>
 
-    <a href="Evento.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/Estudi3.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Captura cada momento único con precisión y mucho cuidado <br>
-      Fotografía profesional que refleja emoción y energía genuina
-    </div>
-  </div>
-
-
-  <!-- Aniversario -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Cumpleaños</div>
-      <div>Cumpleaños, Pareja, Celebración especial</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Cumpleaños</div><div>Cumpleaños, Pareja, Celebración especial</div></div>
+      <a href="Aniversario.html" class="project-thumb"><img src="assets/Cumple1.webp" alt="Cumpleaños"></a>
+      <div class="project-desc">Celebra momentos especiales con retratos llenos de vida<br>Fotografía auténtica que captura alegría y emociones únicas</div>
     </div>
 
-    <a href="Aniversario.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/Cumple1.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Celebra momentos especiales con retratos llenos de vida <br>
-      Fotografía auténtica que captura alegría y emociones únicas
-    </div>
-  </div>
-
-  <!-- Corporativa -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Corporativa</div>
-      <div>Foto de perfil, Para revista, LinkedIn</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Corporativa</div><div>Foto de perfil, Para revista, LinkedIn</div></div>
+      <a href="Corporativa.html" class="project-thumb"><img src="assets/Empresa1.webp" alt="Corporativa"></a>
+      <div class="project-desc">Refuerza la imagen profesional y visual de tu empresa<br>Fotografía estratégica que genera confianza y coherencia total</div>
     </div>
 
-    <a href="Corporativa.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/Empresa1.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Refuerza la imagen profesional y visual de tu empresa <br>
-      Fotografía estratégica que genera confianza y coherencia total
-    </div>
-  </div>
-
-  <!-- Lifestyle -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Lifestyle</div>
-      <div>Foto de perfil, Para revista, LinkedIn</div>
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Lifestyle</div><div>Foto de perfil, Para revista, LinkedIn</div></div>
+      <a href="Lifestyle.html" class="project-thumb"><img src="assets/p5.webp" alt="Lifestyle"></a>
+      <div class="project-desc">Muestra experiencias auténticas y momentos cotidianos<br>Fotografía que conecta visualmente con tu audiencia real</div>
     </div>
 
-    <a href="Lifestyle.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/p5.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Muestra experiencias auténticas y momentos cotidianos <br>
-      Fotografía que conecta visualmente con tu audiencia real
+    <div class="project-row">
+      <div class="project-info"><div class="project-title">Vacaciones</div><div>Foto de perfil, Para revista, LinkedIn</div></div>
+      <a href="Vacaciones.html" class="project-thumb"><img src="assets/moda6.webp" alt="Vacaciones"></a>
+      <div class="project-desc">Captura recuerdos únicos y momentos espontáneos de viajes<br>Fotografía que refleja emociones, diversión y tus experiencias</div>
     </div>
-  </div>
+  </section>
 
-  <!-- Vacaciones -->
-  <div style="display: flex; border-top: 1px solid black; border-bottom: 0.2px solid #302f2f; margin: 0 20px; min-height: 200px;">
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
-      <div style="font-weight: bold; font-size: 18px;">Vacaciones</div>
-      <div>Foto de perfil, Para revista, LinkedIn</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-title">CONTACTO</div>
+      <div class="footer-tagline">Tu proyecto merece imágenes únicas. Escríbeme</div>
     </div>
-
-    <a href="Vacaciones.html" style="width: 33%; display: flex; justify-content: center; align-items: center;">
-      <img src="assets/moda6.webp" style="width: 220px; height: 150px; object-fit: cover; display: block;">
-    </a>
-
-    <div style="width: 33%; font-size: 14px; display: flex; flex-direction: column; justify-content: center; line-height: 1.4;">
-      Captura recuerdos únicos y momentos espontáneos de viajes <br>
-      Fotografía que refleja emociones, diversión y tus experiencias
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <div class="footer-contact">Tel: +34 609 059 802 | <a href="mailto:rinahcolomer@gmail.com">rinahcolomer@gmail.com</a></div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/rinah-colomer-ayllón/" target="_blank">LinkedIn</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/rini_colomer/" target="_blank">Instagram</a>
+      </div>
     </div>
-  </div>
-
-</section>
-
-<!-- FOOTER SECTION -->
-<footer style="color: black; background-color: white; padding: 40px 20px; font-family: sans-serif;">
-
-  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; flex-wrap: wrap;">
-    <div style="font-size: 36px; font-weight: bold; text-transform: uppercase;">CONTACTO</div>
-    <div style="font-size: 14px;">Tu proyecto merece imágenes únicas. Escríbeme</div>
-  </div>
-
-  <hr style="border: 0.5px solid black; margin-bottom: 20px;">
-
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-
-    <div style="font-size: 16px; white-space: nowrap;">
-      <a href="mailto:your@email.com" style="color: black; text-decoration: none;">Tel: +34 609 059 802</a>
-    </div>
-
-    <div style="font-size: 16px; white-space: nowrap;">
-      <a href="https://www.linkedin.com/in/rinah-colomer-ayllón/" target="_blank" style="color: black; text-decoration: underline;">LinkedIn</a>
-      &nbsp;|&nbsp;
-      <a href="https://www.instagram.com/rini_colomer/" target="_blank" style="color: black; text-decoration: underline;">Instagram</a>
-    </div>
-
-  </div>
-
-</footer>
+  </footer>
 
 </body>
 </html>
