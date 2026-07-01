@@ -20,21 +20,13 @@
   <div class="spacer"></div>
 
   <div class="hero-banner">
-    <img src="assets/p8.webp" alt="Retrato">
+    <img id="hero-img" src="" alt="Retrato">
     <div class="hero-banner-title">Retrato</div>
   </div>
 
   <section class="grid-section">
     <h2>FOTOS</h2>
-    <div class="grid">
-      <div class="grid-item"><img src="assets/Ev1.webp" alt="Retrato 1"></div>
-      <div class="grid-item"><img src="assets/Estudi3.webp" alt="Retrato 2"></div>
-      <div class="grid-item"><img src="assets/Ev2.webp" alt="Retrato 3"></div>
-      <div class="grid-item"><img src="assets/Moda3.webp" alt="Retrato 4"></div>
-      <div class="grid-item"><img src="assets/Estudi1.webp" alt="Retrato 5"></div>
-      <div class="grid-item"><img src="assets/Moda7.webp" alt="Retrato 6"></div>
-
-    </div>
+    <div class="grid" id="photo-grid"></div>
   </section>
 
   <section class="projects-section">
@@ -45,43 +37,36 @@
       <a href="Producto.html" class="project-thumb"><img src="assets/Producto2.webp" alt="Productos"></a>
       <div class="project-desc">Fotografía que destaca características y diseño de productos<br>Imágenes profesionales para catálogo y e-commerce</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Moda</div><div>Editorial, Pasarela, Lookbook</div></div>
       <a href="Moda.html" class="project-thumb"><img src="assets/Moda3.webp" alt="Moda"></a>
       <div class="project-desc">Fotografía creativa que resalta estilo y tendencias<br>Imágenes con estética moderna y profesional</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Evento</div><div>Concierto, Conferencia, Fiesta privada</div></div>
       <a href="Evento.html" class="project-thumb"><img src="assets/b11.webp" alt="Evento"></a>
       <div class="project-desc">Captura cada momento único con precisión y cuidado<br>Fotografía profesional que refleja emoción y energía</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Boda</div><div>Ceremonia, Sesión pareja, Fiesta</div></div>
       <a href="Boda.html" class="project-thumb"><img src="assets/Casament5.webp" alt="Boda"></a>
       <div class="project-desc">Captura los momentos más importantes del día especial<br>Fotografía llena de emociones y recuerdos auténticos</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Cumpleaños</div><div>Celebración, Pareja, Fiesta</div></div>
       <a href="Aniversario.html" class="project-thumb"><img src="assets/Cumple1.webp" alt="Cumpleaños"></a>
       <div class="project-desc">Captura aniversarios con emoción y detalles memorables<br>Fotografía que refleja amor y momentos únicos</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Corporativa</div><div>Foto de perfil, Para revista, LinkedIn</div></div>
       <a href="Corporativa.html" class="project-thumb"><img src="assets/Empresa1.webp" alt="Corporativa"></a>
       <div class="project-desc">Refuerza la imagen profesional y visual de tu empresa<br>Fotografía estratégica que genera confianza y coherencia</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Lifestyle</div><div>Retrato diario, Moda, Momentos espontáneos</div></div>
       <a href="Lifestyle.html" class="project-thumb"><img src="assets/p5.webp" alt="Lifestyle"></a>
       <div class="project-desc">Captura momentos naturales y estilizados del día a día<br>Fotografía que transmite autenticidad y estilo personal</div>
     </div>
-
     <div class="project-row">
       <div class="project-info"><div class="project-title">Vacaciones</div><div>Foto de viaje, Paisaje, Experiencias</div></div>
       <a href="Vacaciones.html" class="project-thumb"><img src="assets/Vaca17.webp" alt="Vacaciones"></a>
@@ -104,6 +89,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    fetch('data/retrato.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('hero-img').src = data.hero;
+        const grid = document.getElementById('photo-grid');
+        grid.innerHTML = data.photos.map(p =>
+          `<div class="grid-item"><img src="${p.image}" alt="${p.alt}"></div>`
+        ).join('');
+      });
+  </script>
 
 </body>
 </html>
