@@ -1,0 +1,11 @@
+{
+  "hero": "assets/moda5.webp",
+  "photos": [
+    { "image": "assets/Moda3.webp", "alt": "Moda 1" },
+    { "image": "assets/Moda2.webp", "alt": "Moda 2" },
+    { "image": "assets/Moda1.webp", "alt": "Moda 3" },
+    { "image": "assets/Producto4.webp", "alt": "Moda 4" },
+    { "image": "assets/Moda6.webp", "alt": "Moda 5" },
+    { "image": "assets/Pr5.webp", "alt": "Moda 6" }
+  ]
+}

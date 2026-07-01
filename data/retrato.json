@@ -1,0 +1,11 @@
+{
+  "hero": "assets/p8.webp",
+  "photos": [
+    { "image": "assets/Ev1.webp", "alt": "Retrato 1" },
+    { "image": "assets/Estudi3.webp", "alt": "Retrato 2" },
+    { "image": "assets/Ev2.webp", "alt": "Retrato 3" },
+    { "image": "assets/Moda3.webp", "alt": "Retrato 4" },
+    { "image": "assets/Estudi1.webp", "alt": "Retrato 5" },
+    { "image": "assets/Moda7.webp", "alt": "Retrato 6" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "hero": "assets/Pr10.webp",
+  "photos": [
+    { "image": "assets/Pr1.webp", "alt": "Producto 1" },
+    { "image": "assets/Pr2.webp", "alt": "Producto 2" },
+    { "image": "assets/Pr3.webp", "alt": "Producto 3" },
+    { "image": "assets/Pr4.webp", "alt": "Producto 4" },
+    { "image": "assets/Pr5.webp", "alt": "Producto 5" },
+    { "image": "assets/Pr6.webp", "alt": "Producto 6" },
+    { "image": "assets/Pr7.webp", "alt": "Producto 7" },
+    { "image": "assets/Pr8.webp", "alt": "Producto 8" },
+    { "image": "assets/Pr9.webp", "alt": "Producto 9" }
+  ]
+}

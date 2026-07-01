@@ -1,0 +1,14 @@
+{
+  "hero": "assets/Vaca17.webp",
+  "photos": [
+    { "image": "assets/Vaca2.webp", "alt": "Vacaciones 1" },
+    { "image": "assets/Vaca3.webp", "alt": "Vacaciones 2" },
+    { "image": "assets/Vaca4.webp", "alt": "Vacaciones 3" },
+    { "image": "assets/Vaca6.webp", "alt": "Vacaciones 4" },
+    { "image": "assets/Vaca7.webp", "alt": "Vacaciones 5" },
+    { "image": "assets/Vaca8.webp", "alt": "Vacaciones 6" },
+    { "image": "assets/Vaca11.webp", "alt": "Vacaciones 7" },
+    { "image": "assets/Vaca13.webp", "alt": "Vacaciones 8" },
+    { "image": "assets/Vaca14.webp", "alt": "Vacaciones 9" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "hero": "assets/ca3.webp",
+  "photos": [
+    { "image": "assets/Casament2.webp", "alt": "Evento 1" },
+    { "image": "assets/Vaca12.webp", "alt": "Evento 2" },
+    { "image": "assets/ca4.webp", "alt": "Evento 3" },
+    { "image": "assets/a11.webp", "alt": "Evento 4" },
+    { "image": "assets/a4.webp", "alt": "Evento 5" },
+    { "image": "assets/a2.webp", "alt": "Evento 6" }
+  ]
+}

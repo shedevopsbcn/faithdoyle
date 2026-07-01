@@ -1,0 +1,14 @@
+{
+  "hero": "assets/Ca0.webp",
+  "photos": [
+    { "image": "assets/Ca1.webp", "alt": "Boda 1" },
+    { "image": "assets/ca2.webp", "alt": "Boda 2" },
+    { "image": "assets/ca3.webp", "alt": "Boda 3" },
+    { "image": "assets/ca5.webp", "alt": "Boda 4" },
+    { "image": "assets/ca6.webp", "alt": "Boda 5" },
+    { "image": "assets/ca7.webp", "alt": "Boda 6" },
+    { "image": "assets/b7.webp", "alt": "Boda 7" },
+    { "image": "assets/b8.webp", "alt": "Boda 8" },
+    { "image": "assets/b9.webp", "alt": "Boda 9" }
+  ]
+}

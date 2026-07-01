@@ -1,0 +1,14 @@
+{
+  "hero": "assets/Pr8.webp",
+  "photos": [
+    { "image": "assets/Pr2.webp", "alt": "Lifestyle 1" },
+    { "image": "assets/Pr3.webp", "alt": "Lifestyle 2" },
+    { "image": "assets/Pr7.webp", "alt": "Lifestyle 3" },
+    { "image": "assets/b13.webp", "alt": "Lifestyle 4" },
+    { "image": "assets/A12.webp", "alt": "Lifestyle 5" },
+    { "image": "assets/b14.webp", "alt": "Lifestyle 6" },
+    { "image": "assets/Vaca2.webp", "alt": "Lifestyle 7" },
+    { "image": "assets/Vaca3.webp", "alt": "Lifestyle 8" },
+    { "image": "assets/Vaca4.webp", "alt": "Lifestyle 9" }
+  ]
+}

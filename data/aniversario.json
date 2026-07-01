@@ -1,0 +1,14 @@
+{
+  "hero": "assets/A9.webp",
+  "photos": [
+    { "image": "assets/A1.webp", "alt": "Aniversario 1" },
+    { "image": "assets/A2.webp", "alt": "Aniversario 2" },
+    { "image": "assets/A3.webp", "alt": "Aniversario 3" },
+    { "image": "assets/A10.webp", "alt": "Aniversario 4" },
+    { "image": "assets/A4.webp", "alt": "Aniversario 5" },
+    { "image": "assets/A5.webp", "alt": "Aniversario 6" },
+    { "image": "assets/A14.webp", "alt": "Aniversario 7" },
+    { "image": "assets/A8.webp", "alt": "Aniversario 8" },
+    { "image": "assets/A7.webp", "alt": "Aniversario 9" }
+  ]
+}
