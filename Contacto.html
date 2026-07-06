@@ -22,7 +22,7 @@
 
   <!-- HERO -->
   <div class="hero-banner">
-    <img src="assets/R2contacto.webp" alt="Contacto">
+    <img id="hero-img" src="" alt="Contacto">
   </div>
 
   <!-- CONTACT TITLE -->
@@ -60,9 +60,16 @@
   </footer>
 
   <script>
+    // Load hero image from CMS data
+    fetch('data/contacto.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('hero-img').src = data.hero;
+      });
+
+    // Contact form submission
     const form = document.getElementById("contact-form");
     const success = document.getElementById("success-message");
-
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
       const data = new FormData(form);

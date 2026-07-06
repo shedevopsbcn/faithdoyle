@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rinah Colomer — CMS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinah Colomer — Fotógrafa en Barcelona y Osona</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- NAV -->
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="Boda.html">PROYECTOS</a>
+      <a href="Contacto.html">CONTACTO</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-text">
+      <h2 class="name" id="about-name"></h2>
+      <h2 class="location" id="about-location"></h2>
+      <p id="about-bio1"></p>
+      <p id="about-bio2"></p>
+      <p id="about-bio3"></p>
+    </div>
+    <div class="about-image">
+      <img id="about-photo" src="" alt="Rinah Colomer Ayllón">
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section class="portfolio-section">
+    <h3>Mis trabajos</h3>
+    <p class="subtitle" id="portfolio-subtitle"></p>
+
+    <!-- The 9 portfolio items are split into 3 rows of 3 -->
+    <!-- Each links to the correct gallery page -->
+    <div id="portfolio-rows"></div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section">
+    <h2>SERVICIOS</h2>
+    <hr class="services-divider">
+    <div class="services-grid" id="services-grid"></div>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <div class="photo-strip-inner" id="photo-strip"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-title">CONTACTO</div>
+      <div class="footer-tagline" id="footer-tagline"></div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <div class="footer-contact">
+        <a href="mailto:rinahcolomer@gmail.com">Tel: +34 609 059 802 | Email: rinahcolomer@gmail.com</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/rinah-colomer-ayllón/" target="_blank">LinkedIn</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/rini_colomer/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Portfolio gallery links in the same order as the 9 portfolio_items
+    const galleryLinks = [
+      'Retrato.html',
+      'Producto.html',
+      'Moda.html',
+      'Evento.html',
+      'Boda.html',
+      'Aniversario.html',
+      'Corporativa.html',
+      'Vacaciones.html',
+      'Lifestyle.html'
+    ];
+
+    const portfolioLabels = [
+      'Retratos', 'Producto', 'Moda',
+      'Eventos', 'Bodas', 'Cumpleaños',
+      'Corporativa', 'Viajes', 'Lifestyle'
+    ];
+
+    fetch('data/homepage.json')
+      .then(r => r.json())
+      .then(data => {
+        // About
+        document.getElementById('about-name').textContent = data.name;
+        document.getElementById('about-location').textContent = data.location;
+        document.getElementById('about-bio1').textContent = data.bio_1;
+        document.getElementById('about-bio2').textContent = data.bio_2;
+        document.getElementById('about-bio3').textContent = data.bio_3;
+        document.getElementById('about-photo').src = data.about_photo;
+
+        // Portfolio subtitle
+        document.getElementById('portfolio-subtitle').textContent = data.portfolio_subtitle;
+
+        // Portfolio rows (3 rows of 3)
+        const rowsEl = document.getElementById('portfolio-rows');
+        let rowsHTML = '';
+        for (let row = 0; row < 3; row++) {
+          rowsHTML += '<div class="portfolio-row">';
+          for (let col = 0; col < 3; col++) {
+            const i = row * 3 + col;
+            const item = data.portfolio_items[i];
+            rowsHTML += `
+              <div class="portfolio-item">
+                <a href="${galleryLinks[i]}">
+                  <img src="${item.image}" alt="${item.alt}">
+                  <p>${portfolioLabels[i]}</p>
+                </a>
+              </div>`;
+          }
+          rowsHTML += '</div>';
+        }
+        rowsEl.innerHTML = rowsHTML;
+
+        // Services
+        const servicesEl = document.getElementById('services-grid');
+        servicesEl.innerHTML = data.services.map(s => `
+          <div class="service-item">
+            <h3>${s.title}</h3>
+            <ul>${s.items.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>`).join('');
+
+        // Photo strip
+        const stripEl = document.getElementById('photo-strip');
+        stripEl.innerHTML = data.strip_photos.map(p =>
+          `<img src="${p.image}" alt="${p.alt}">`
+        ).join('');
+
+        // Footer tagline
+        document.getElementById('footer-tagline').textContent = data.footer_tagline;
+      });
+  </script>
+
 </body>
 </html>
