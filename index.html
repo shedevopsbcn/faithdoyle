@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
   <!-- NAV -->
@@ -22,156 +21,44 @@
   <!-- ABOUT SECTION -->
   <section class="about-section">
     <div class="about-text">
-      <h2 class="name">RINAH COLOMER AYLLÓN</h2>
-      <h2 class="location">Fotógrafa en Barcelona, Vic y Osona</h2>
-      <p>
-        Soy Rinah Colomer, fotógrafa profesional y creadora de contenido con base en Barcelona.
-        Trabajo en diferentes ámbitos de la fotografía, ofreciendo servicios tanto para particulares
-        como para marcas y proyectos creativos. Realizo sesiones de fotografía de bodas, comuniones,
-        bautizos y eventos, así como retratos personales, fotografía de marca personal, contenido
-        para redes sociales y fotografía corporativa. También desarrollo proyectos creativos y
-        fotografía de viajes con una mirada natural.
-      </p>
-      <p>
-        Trabajo en Barcelona y por la comarca de Osona, adaptándome a cada cliente y a cada tipo de proyecto.
-        Mi objetivo es capturar imágenes auténticas que transmitan emoción, personalidad y coherencia,
-        ya sea en un momento importante o en la construcción de una imagen de marca. Mi enfoque combina sensibilidad estética
-        y dirección creativa, cuidando cada detalle desde la planificación hasta la entrega final. No se trata solo de hacer fotos, sino de crear
-        recuerdos y contenido visual que tenga valor y significado.
-      </p>
-      <p>
-        Cada proyecto es único, por eso trabajo de forma cercana y personalizada para conseguir resultados
-        que realmente conecten contigo y con tu público. Si buscas una fotógrafa en Barcelona y Osona para
-        tu boda, evento, sesión personal o proyecto, cuéntame qué tienes.
-      </p>
+      <h2 class="name" id="about-name"></h2>
+      <h2 class="location" id="about-location"></h2>
+      <p id="about-bio1"></p>
+      <p id="about-bio2"></p>
+      <p id="about-bio3"></p>
     </div>
     <div class="about-image">
-      <img src="assets/R1_1.webp" alt="Rinah Colomer Ayllón">
+      <img id="about-photo" src="" alt="Rinah Colomer Ayllón">
     </div>
   </section>
 
   <!-- PORTFOLIO SECTION -->
   <section class="portfolio-section">
     <h3>Mis trabajos</h3>
-    <p class="subtitle">Soy fotógrafa, videógrafa y creadora de contenido visual</p>
+    <p class="subtitle" id="portfolio-subtitle"></p>
 
-    <!-- ROW 1 -->
-    <div class="portfolio-row">
-      <div class="portfolio-item">
-        <a href="Retrato.html">
-          <img src="assets/producto6.webp" alt="Retratos">
-          <p>Retratos</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Producto.html">
-          <img src="assets/producto2.webp" alt="Producto">
-          <p>Producto</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Moda.html">
-          <img src="assets/estudi3.webp" alt="Moda">
-          <p>Moda</p>
-        </a>
-      </div>
-    </div>
-
-    <!-- ROW 2 -->
-    <div class="portfolio-row">
-      <div class="portfolio-item">
-        <a href="Evento.html">
-          <img src="assets/b14.webp" alt="Eventos">
-          <p>Eventos</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Boda.html">
-          <img src="assets/Casament5.webp" alt="Bodas">
-          <p>Bodas</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Aniversario.html">
-          <img src="assets/Cumple1.webp" alt="Cumpleaños">
-          <p>Cumpleaños</p>
-        </a>
-      </div>
-    </div>
-
-    <!-- ROW 3 -->
-    <div class="portfolio-row">
-      <div class="portfolio-item">
-        <a href="Corporativa.html">
-          <img src="assets/Empresa1.webp" alt="Corporativa">
-          <p>Corporativa</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Vacaciones.html">
-          <img src="assets/moda6.webp" alt="Viajes">
-          <p>Viajes</p>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="Lifestyle.html">
-          <img src="assets/Moda5.webp" alt="Lifestyle">
-          <p>Lifestyle</p>
-        </a>
-      </div>
-    </div>
+    <!-- The 9 portfolio items are split into 3 rows of 3 -->
+    <!-- Each links to the correct gallery page -->
+    <div id="portfolio-rows"></div>
   </section>
 
   <!-- SERVICES SECTION -->
   <section class="services-section">
     <h2>SERVICIOS</h2>
     <hr class="services-divider">
-    <div class="services-grid">
-      <div class="service-item">
-        <h3>Fotografía</h3>
-        <ul>
-          <li>Fotografía de retrato</li>
-          <li>Fotografía lifestyle y espontánea</li>
-          <li>Fotografía de Eventos, bodas y viajes</li>
-          <li>Fotografía de Producto y comercial</li>
-        </ul>
-      </div>
-      <div class="service-item">
-        <h3>Videografía</h3>
-        <ul>
-          <li>Videos de marca para empresas</li>
-          <li>Cobertura de eventos en video</li>
-          <li>Videos para redes sociales</li>
-          <li>Cortometrajes narrativos</li>
-        </ul>
-      </div>
-      <div class="service-item">
-        <h3>Contenido para marcas</h3>
-        <ul>
-          <li>Creación de contenido para redes sociales</li>
-          <li>Estrategia y planificación para marcas</li>
-          <li>Dirección creativa de contenido visual</li>
-          <li>Gestión de redes sociales (Community Manager)</li>
-        </ul>
-      </div>
-    </div>
+    <div class="services-grid" id="services-grid"></div>
   </section>
 
   <!-- PHOTO STRIP -->
   <div class="photo-strip">
-    <div class="photo-strip-inner">
-      <img src="assets/R2.webp" alt="Rinah 1">
-      <img src="assets/R3.webp" alt="Rinah 2">
-      <img src="assets/R1_1.webp" alt="Rinah 3">
-      <img src="assets/R4.webp" alt="Rinah 4">
-    </div>
+    <div class="photo-strip-inner" id="photo-strip"></div>
   </div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-title">CONTACTO</div>
-      <div class="footer-tagline">Cada proyecto empieza con una conversación. Cuéntame tu idea, y yo me encargo del resto</div>
+      <div class="footer-tagline" id="footer-tagline"></div>
     </div>
     <hr class="footer-divider">
     <div class="footer-bottom">
@@ -185,6 +72,79 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Portfolio gallery links in the same order as the 9 portfolio_items
+    const galleryLinks = [
+      'Retrato.html',
+      'Producto.html',
+      'Moda.html',
+      'Evento.html',
+      'Boda.html',
+      'Aniversario.html',
+      'Corporativa.html',
+      'Vacaciones.html',
+      'Lifestyle.html'
+    ];
+
+    const portfolioLabels = [
+      'Retratos', 'Producto', 'Moda',
+      'Eventos', 'Bodas', 'Cumpleaños',
+      'Corporativa', 'Viajes', 'Lifestyle'
+    ];
+
+    fetch('data/homepage.json')
+      .then(r => r.json())
+      .then(data => {
+        // About
+        document.getElementById('about-name').textContent = data.name;
+        document.getElementById('about-location').textContent = data.location;
+        document.getElementById('about-bio1').textContent = data.bio_1;
+        document.getElementById('about-bio2').textContent = data.bio_2;
+        document.getElementById('about-bio3').textContent = data.bio_3;
+        document.getElementById('about-photo').src = data.about_photo;
+
+        // Portfolio subtitle
+        document.getElementById('portfolio-subtitle').textContent = data.portfolio_subtitle;
+
+        // Portfolio rows (3 rows of 3)
+        const rowsEl = document.getElementById('portfolio-rows');
+        let rowsHTML = '';
+        for (let row = 0; row < 3; row++) {
+          rowsHTML += '<div class="portfolio-row">';
+          for (let col = 0; col < 3; col++) {
+            const i = row * 3 + col;
+            const item = data.portfolio_items[i];
+            rowsHTML += `
+              <div class="portfolio-item">
+                <a href="${galleryLinks[i]}">
+                  <img src="${item.image}" alt="${item.alt}">
+                  <p>${portfolioLabels[i]}</p>
+                </a>
+              </div>`;
+          }
+          rowsHTML += '</div>';
+        }
+        rowsEl.innerHTML = rowsHTML;
+
+        // Services
+        const servicesEl = document.getElementById('services-grid');
+        servicesEl.innerHTML = data.services.map(s => `
+          <div class="service-item">
+            <h3>${s.title}</h3>
+            <ul>${s.items.map(item => `<li>${item}</li>`).join('')}</ul>
+          </div>`).join('');
+
+        // Photo strip
+        const stripEl = document.getElementById('photo-strip');
+        stripEl.innerHTML = data.strip_photos.map(p =>
+          `<img src="${p.image}" alt="${p.alt}">`
+        ).join('');
+
+        // Footer tagline
+        document.getElementById('footer-tagline').textContent = data.footer_tagline;
+      });
+  </script>
 
 </body>
 </html>
