@@ -1,11 +1,29 @@
 {
   "hero": "assets/Empresa2banner.webp",
   "photos": [
-    { "image": "assets/Empresa1.webp", "alt": "Corporativa 1" },
-    { "image": "assets/Empresa2.webp", "alt": "Corporativa 2" },
-    { "image": "assets/Empresa3.webp", "alt": "Corporativa 3" },
-    { "image": "assets/moda7.webp", "alt": "Corporativa 4" },
-    { "image": "assets/producto1.webp", "alt": "Corporativa 5" },
-    { "image": "assets/moda6.webp", "alt": "Corporativa 6" }
+    {
+      "image": "assets/_2070186.jpg",
+      "alt": "Corporativa 1"
+    },
+    {
+      "image": "assets/Empresa2.webp",
+      "alt": "Corporativa 2"
+    },
+    {
+      "image": "assets/Empresa3.webp",
+      "alt": "Corporativa 3"
+    },
+    {
+      "image": "assets/moda7.webp",
+      "alt": "Corporativa 4"
+    },
+    {
+      "image": "assets/producto1.webp",
+      "alt": "Corporativa 5"
+    },
+    {
+      "image": "assets/moda6.webp",
+      "alt": "Corporativa 6"
+    }
   ]
 }
