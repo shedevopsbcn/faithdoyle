@@ -1,28 +1,28 @@
 {
-  "hero": "assets/Empresa2banner.webp",
+  "hero": "assets/2070186.webp",
   "photos": [
     {
-      "image": "https://rinahcolomer.com/assets/Empresa2.webp",
+      "image": "assets/2070207.webp",
       "alt": "Corporativa 1"
     },
     {
-      "image": "assets/Empresa2.webp",
+      "image": "assets/2070246.webp",
       "alt": "Corporativa 2"
     },
     {
-      "image": "assets/Empresa3.webp",
+      "image": "assets/2070268.webp",
       "alt": "Corporativa 3"
     },
     {
-      "image": "assets/moda7.webp",
+      "image": "assets/2070273.webp",
       "alt": "Corporativa 4"
     },
     {
-      "image": "assets/producto1.webp",
+      "image": "assets/2070305.webp",
       "alt": "Corporativa 5"
     },
     {
-      "image": "assets/moda6.webp",
+      "image": "assets/2070363.webp",
       "alt": "Corporativa 6"
     }
   ]
