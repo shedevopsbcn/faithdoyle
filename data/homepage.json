@@ -1,30 +1,76 @@
 {
+  "about_photo": "assets/R1_1.webp",
+  "strip_photos": [
+    {
+      "image": "assets/R2.webp",
+      "alt": "Rinah 1"
+    },
+    {
+      "image": "assets/R3.webp",
+      "alt": "Rinah 2"
+    },
+    {
+      "image": "assets/R1_1.webp",
+      "alt": "Rinah 3"
+    },
+    {
+      "image": "assets/R4.webp",
+      "alt": "Rinah 4"
+    }
+  ],
+  "portfolio_items": [
+    {
+      "image": "assets/producto6.webp",
+      "alt": "Retratos"
+    },
+    {
+      "image": "assets/producto2.webp",
+      "alt": "Producto"
+    },
+    {
+      "image": "assets/estudi3.webp",
+      "alt": "Moda"
+    },
+    {
+      "image": "assets/b14.webp",
+      "alt": "Eventos"
+    },
+    {
+      "image": "assets/Casament5.webp",
+      "alt": "Bodas"
+    },
+    {
+      "image": "assets/Cumple1.webp",
+      "alt": "Cumpleaños"
+    },
+    {
+      "image": "assets/Empresa1.webp",
+      "alt": "Corporativa"
+    },
+    {
+      "image": "assets/moda6.webp",
+      "alt": "Viajes"
+    },
+    {
+      "image": "assets/Moda5.webp",
+      "alt": "Lifestyle"
+    }
+  ],
+  "footer_tagline": "Cada proyecto empieza con una conversación. Cuéntame tu idea, y yo me encargo del resto",
   "name": "RINAH COLOMER AYLLÓN",
+  "portfolio_subtitle": "Soy fotógrafa, videógrafa y creadora de contenido visual",
   "location": "Fotógrafa en Barcelona, Vic y Osona",
   "bio_1": "Soy Rinah Colomer, fotógrafa profesional y creadora de contenido con base en Barcelona. Trabajo en diferentes ámbitos de la fotografía, ofreciendo servicios tanto para particulares como para marcas y proyectos creativos. Realizo sesiones de fotografía de bodas, comuniones, bautizos y eventos, así como retratos personales, fotografía de marca personal, contenido para redes sociales y fotografía corporativa. También desarrollo proyectos creativos y fotografía de viajes con una mirada natural.",
   "bio_2": "Trabajo en Barcelona y por la comarca de Osona, adaptándome a cada cliente y a cada tipo de proyecto. Mi objetivo es capturar imágenes auténticas que transmitan emoción, personalidad y coherencia, ya sea en un momento importante o en la construcción de una imagen de marca. Mi enfoque combina sensibilidad estética y dirección creativa, cuidando cada detalle desde la planificación hasta la entrega final. No se trata solo de hacer fotos, sino de crear recuerdos y contenido visual que tenga valor y significado.",
   "bio_3": "Cada proyecto es único, por eso trabajo de forma cercana y personalizada para conseguir resultados que realmente conecten contigo y con tu público. Si buscas una fotógrafa en Barcelona y Osona para tu boda, evento, sesión personal o proyecto, cuéntame qué tienes.",
-  "about_photo": "assets/R1_1.webp",
-  "portfolio_subtitle": "Soy fotógrafa, videógrafa y creadora de contenido visual",
-  "portfolio_items": [
-    { "image": "assets/producto6.webp", "alt": "Retratos" },
-    { "image": "assets/producto2.webp", "alt": "Producto" },
-    { "image": "assets/estudi3.webp", "alt": "Moda" },
-    { "image": "assets/b14.webp", "alt": "Eventos" },
-    { "image": "assets/Casament5.webp", "alt": "Bodas" },
-    { "image": "assets/Cumple1.webp", "alt": "Cumpleaños" },
-    { "image": "assets/Empresa1.webp", "alt": "Corporativa" },
-    { "image": "assets/moda6.webp", "alt": "Viajes" },
-    { "image": "assets/Moda5.webp", "alt": "Lifestyle" }
-  ],
   "services": [
     {
       "title": "Fotografía ",
       "items": [
-        "Fotografía de retrato",
-        "Fotografía lifestyle y espontánea",
+        "Fotografía de moda",
+        "Fotografía lifestyle y espontánea de retrato",
         "Fotografía de Eventos, bodas y viajes",
-        "Fotografía de Producto y comercial"
+        "Fotografía Corporativa y de producto"
       ]
     },
     {
@@ -32,8 +78,7 @@
       "items": [
         "Videos de marca para empresas",
         "Cobertura de eventos en video",
-        "Videos para redes sociales",
-        "Cortometrajes narrativos"
+        "Videos para redes sociales"
       ]
     },
     {
@@ -45,12 +90,5 @@
         "Gestión de redes sociales (Community Manager)"
       ]
     }
-  ],
-  "strip_photos": [
-    { "image": "assets/R2.webp", "alt": "Rinah 1" },
-    { "image": "assets/R3.webp", "alt": "Rinah 2" },
-    { "image": "assets/R1_1.webp", "alt": "Rinah 3" },
-    { "image": "assets/R4.webp", "alt": "Rinah 4" }
-  ],
-  "footer_tagline": "Cada proyecto empieza con una conversación. Cuéntame tu idea, y yo me encargo del resto"
+  ]
 }
