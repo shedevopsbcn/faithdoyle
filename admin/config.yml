@@ -119,7 +119,7 @@ collections:
           - label: "Fotos de la galería"
             name: "photos"
             widget: "list"
-            max: 6
+            max: 36
             fields:
               - { label: "Foto", name: "image", widget: "image" }
               - { label: "Descripción", name: "alt", widget: "string" }
