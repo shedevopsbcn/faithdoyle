@@ -2,7 +2,7 @@
   "hero": "assets/Empresa2banner.webp",
   "photos": [
     {
-      "image": "assets/p2.webp",
+      "image": "https://rinahcolomer.com/assets/Empresa2.webp",
       "alt": "Corporativa 1"
     },
     {
