@@ -134,6 +134,13 @@
         ).join('');
 
         document.getElementById('footer-tagline').textContent = data.footer_tagline;
+
+        // After content is rendered, scroll to #portfolio if that's what was requested
+        if (window.location.hash === '#portfolio') {
+          setTimeout(() => {
+            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
       });
   </script>
 
