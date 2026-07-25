@@ -1,11 +1,29 @@
 {
-  "hero": "assets/p8.webp",
+  "hero": "assets/p1018137.jpg",
   "photos": [
-    { "image": "assets/Ev1.webp", "alt": "Retrato 1" },
-    { "image": "assets/Estudi3.webp", "alt": "Retrato 2" },
-    { "image": "assets/Ev2.webp", "alt": "Retrato 3" },
-    { "image": "assets/Moda3.webp", "alt": "Retrato 4" },
-    { "image": "assets/Estudi1.webp", "alt": "Retrato 5" },
-    { "image": "assets/Moda7.webp", "alt": "Retrato 6" }
+    {
+      "image": "assets/p1018159.jpg",
+      "alt": "Retrato 1"
+    },
+    {
+      "image": "assets/p1018192.jpg",
+      "alt": "Retrato 2"
+    },
+    {
+      "image": "assets/p1018210.jpg",
+      "alt": "Retrato 3"
+    },
+    {
+      "image": "assets/p1018227.jpg",
+      "alt": "Retrato 4"
+    },
+    {
+      "image": "assets/p1018233.jpg",
+      "alt": "Retrato 5"
+    },
+    {
+      "image": "assets/p1018252.jpg",
+      "alt": "Retrato 6"
+    }
   ]
 }
